@@ -17,9 +17,7 @@ This project allows users to explore the commute from anywhere to multiple neigh
 - (3) Paste your new api key into the bottom of /index.html by replacing the text that says ADD-YOUR-KEY-HERE.
 - (4) Run the program locally in your browser.
 
-## Authors
-
-Contributors names and contact info
+## Author
 
 Gabby Hoefer
 [@ghoefer](https://gabbyhoefer.com)
