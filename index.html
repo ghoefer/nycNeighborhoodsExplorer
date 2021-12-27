@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NYC Neighborhoods</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="script.js"></script>
+    
+<!--     favicon -->
+<!--     icon from: flaticon https://www.flaticon.com/premium-icon/new-york_1263602?term=new%20york%20skyline&page=1&position=2&page=1&position=2&related_id=1263602&origin=search -->
+    <link rel="icon" 
+      type="image/png" 
+      href="https://cdn.glitch.me/31a365f1-0b1f-4749-8ba1-3190ecc5243b%2Fnew-york.png?v=1638375796098"
+    />
+    
+    <!-- animate.css stylesheet -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">  
+  </head>
+  <body>
+    <intro>
+      <h1 class="animate__animated animate__fadeIn">Welcome to</h1>
+      <nyc-txt class="animate__animated animate__flipInX"> New York</nyc-txt>
+      <h2>Now that you're here, let's find where you'll stay.
+        <br>Which neighborhood is best for your commute?</br>
+      </h2>
+  
+    <cost>   
+    <label for="cost">Sort by:</label>
+      <select name="cost" id="cost" onchange="showDiv(this)">
+        <option class="drop" value="selectcard">Please Select</option>
+        <option class="drop" value="1">Most Expensive</option>
+        <option class="drop" value="0">Least Expensive</option>
+      </select>
+    </cost>
+    
+      </intro>
+  
+      <div id="floating-panel"> 
+        
+      <start>
+        <input id="pac-input" class="controls" type="text" placeholder="Your work address" />
+      </start>
+    
+
+      <end>
+        <allCheckBoxes>  
+        <ul class="checkboxes" id="least">
+<!--           https://www.propertyshark.com/Real-Estate-Reports/nyc-neighborhood-sales/ -->
+          <li>  
+          <input name="neighborhood" id="Tudor City" type="checkbox" value="Tudor City, Manhattan, New York, NY">
+            <label for="Tudor City">Tudor City</label></li>
+            <li>
+            <input name="neighborhood" id="Gramercy" type="checkbox" value="Gramercy, Manhattan, New York, NY">
+            <label for="Gramercy">Gramercy</label></li>
+            <li>
+            <input name="neighborhood" id="Lower East Side" type="checkbox" value="Lower East Side, Manhattan, New York, NY">
+            <label for="Lower East Side">Lower East Side</label></li>
+            <li>
+            <input name="neighborhood" id="Kips Bay" type="checkbox" value="Kips Bay, Manhattan, New York, NY">
+            <label for="Kips Bay">Kips Bay</label></li>
+            <li>
+            <input name="neighborhood" id="Hell's Kitchen" type="checkbox" value="Hell's Kitchen, Manhattan, New York, NY">
+            <label for="Hell's Kitchen">Flatiron District</label></li>
+            
+          </ul>
+          
+        <ul class="checkboxes" id="most">
+<!--           https://www.statista.com/statistics/892117/most-expensive-nyc-neighborhoods-home-prices/ -->
+           <li>
+            <input name="neighborhood" id="Hudson Yards" type="checkbox" value="Hudson Yards, New York, NY">
+            <label for="Hudson Yards">Hudson Yards</label></li>
+             <li>
+            <input name="neighborhood" id="Tribeca" type="checkbox" value="Tribeca, Manhattan, New York, NY">
+            <label for="Tribeca">Tribeca</label></li>
+             <li>
+            <input name="neighborhood" id="SoHo" type="checkbox" value="SoHo, Manhattan, New York, NY">
+            <label for="SoHo">SoHo</label></li>
+            <li>
+            <input name="neighborhood" id="Little Italy" type="checkbox" value="Little Italy, Manhattan, New York, NY">
+            <label for="Little Italy">Little Italy</label></li>
+            <li>
+            <input name="neighborhood" id="Hudson Square" type="checkbox" value="Hudson Square, Manhattan, New York, NY">
+            <label for="Hudson Square">Hudson Square</label></li>
+        </ul>
+        </allCheckboxes>
+      </end>
+    </div>
+
+  
+  <map-container>
+    <div id="commutePanel"></div>
+    <form id="form">
+        Departure Time: <input type="text" id="departureTime" size="40" value="2022/01/25 8:00ET">
+      <br>
+    </form>
+    <div id="map"></div>
+
+  </map-container>
+
+  <footer>
+    <img src="https://cdn.glitch.me/31a365f1-0b1f-4749-8ba1-3190ecc5243b%2Fnew-york.png?v=1638375796098"></img>
+    <div id="scroll"></div> 
+  </footer>
+
+<!-- TO DO: Add your Google Maps API key below. 
+This will call Google maps api so that the map shows up correctly.
+The map will not populate with out your key. -->
+<script
+      src="https://maps.googleapis.com/maps/api/js?key="ADD-YOUR-KEY-HERE"&callback=initMap&v=weekly&libraries=places"
+      async
+    ></script>
+  
+</body>
+</html>
