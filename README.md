@@ -29,9 +29,6 @@ Gabby Hoefer
 
 Special thanks to my professor Kathy for all the support and the entire Computational Poetics class at RISD.
 
-## Version History
-- 0.1 -- Initial Release
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
