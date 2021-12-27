@@ -1,3 +1,6 @@
+![Landing Page](https://github.com/ghoefer/nycNeighborhoodsExplorer/blob/main/assets/SideBySide.png "Landing Pages")
+![Map Explorer Page](https://github.com/ghoefer/nycNeighborhoodsExplorer/blob/main/assets/mapexplorer.png "Map Explorer")
+
 # NYC Neighborhood Explorer
 
 This project allows users to explore directions from several neighborhoods in NYC at once. It was created as part of a course assignment at the Rhode Island School of Design (RISD).
@@ -21,6 +24,10 @@ This project allows users to explore the commute from anywhere to multiple neigh
 
 Gabby Hoefer
 [@ghoefer](https://gabbyhoefer.com)
+
+## Acknowledgements
+
+Special thanks to my professor Kathy for all the support and the entire Computational Poetics class at RISD.
 
 ## Version History
 - 0.1 -- Initial Release
