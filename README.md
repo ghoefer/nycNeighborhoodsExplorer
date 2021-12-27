@@ -23,8 +23,7 @@ Gabby Hoefer
 [@ghoefer](https://gabbyhoefer.com)
 
 ## Version History
-- 0.1
-  - Initial Release
+- 0.1 -- Initial Release
 
 ## License
 
